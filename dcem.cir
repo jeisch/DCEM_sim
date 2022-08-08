@@ -1,0 +1,60 @@
+.title KiCad schematic
+.include "models/BFP650.lib"
+.include "models/OPA354.lib"
+.include "models/ths4131.lib"
+XU2 Net-_C9-Pad1_ Net-_C13-Pad1_ +5V GND Net-_C13-Pad2_ OPA354
+C13 Net-_C13-Pad1_ Net-_C13-Pad2_ 3.3pF
+R21 Net-_C13-Pad1_ Net-_C13-Pad2_ 1.13k
+C9 Net-_C9-Pad1_ GND 3.3pF
+R12 Net-_C9-Pad1_ GND 1.13k
+R22 Net-_C14-Pad1_ Net-_C14-Pad2_ 1.1k
+C14 Net-_C14-Pad1_ Net-_C14-Pad2_ 3.3pF
+XQa2 Net-_Qa2-Pad1_ Net-_Qa2-Pad2_ Net-_Qa2-Pad3_ Net-_Qa2-Pad3_ BFP650
+Ra18 Net-_Ca12-Pad2_ Net-_Qa2-Pad2_ 10
+Ra21 +5V Net-_Qa2-Pad1_ 0
+Ra16 Net-_RA17-Pad1_ Net-_Ca12-Pad1_ 0
+Ca12 Net-_Ca12-Pad1_ Net-_Ca12-Pad2_ 5.6pF
+XU3 Net-_C13-Pad2_ Net-_RA17-Pad1_ +5V GND Net-_Ca12-Pad2_ OPA354
+Ra20 Net-_Qa2-Pad3_ Net-_La2-Pad1_ 0
+RA17 Net-_RA17-Pad1_ Net-_La2-Pad1_ 22
+La2 Net-_La2-Pad1_ Net-_La2-Pad2_ 18nH
+R109 Net-_C103-Pad2_ Net-_C14-Pad1_ 100
+R1 GND Net-_C6-Pad1_ 100k
+C103 Net-_C103-Pad1_ Net-_C103-Pad2_ .02uF
+C104 Net-_C104-Pad1_ Net-_C104-Pad2_ .02uF
+R110 Net-_C104-Pad2_ Net-_C7-Pad1_ 100
+R111 Net-_C105-Pad2_ Net-_C14-Pad1_ 100
+R105 GND Net-_C104-Pad1_ 100
+R101 GND Net-_C103-Pad1_ 100
+R17 Net-_R17-Pad1_ Net-_C9-Pad1_ 420
+R18 Net-_C14-Pad2_ Net-_R17-Pad1_ 0
+R16 Net-_C7-Pad2_ Net-_R15-Pad1_ 0
+R15 Net-_R15-Pad1_ Net-_C13-Pad1_ 480
+XU1 Net-_C14-Pad1_ Net-_C7-Pad1_ +5V GND Net-_C7-Pad2_ Net-_C14-Pad2_ +2V5 THS4131
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ 3.3pF
+R11 Net-_C7-Pad1_ Net-_C7-Pad2_ 1.1k
+Ra22 GND Net-_La2-Pad2_ 15
+Ra24 GND Net-_Ra24-Pad2_ 49.9
+RaNTC2 Net-_Ra24-Pad2_ Net-_La2-Pad2_ 10
+Ca15 GND Net-_Ca15-Pad2_ 1uF
+Ca16 GND Net-_Ca15-Pad2_ 1uF
+Ra23 Net-_Ca15-Pad2_ Net-_La2-Pad2_ 15
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ .02u
+R6 Net-_C5-Pad2_ Net-_C14-Pad1_ 100
+V1 Net-_C6-Pad1_ Net-_C5-Pad1_ dc 0 exp(0 0.3m 2n 5n 20n 40n)
+R8 Net-_C6-Pad2_ Net-_C7-Pad1_ 100
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ .02uF
+C101 Net-_C101-Pad1_ Net-_C101-Pad2_ .02uF
+R108 Net-_C102-Pad2_ Net-_C7-Pad1_ 100
+C102 Net-_C102-Pad1_ Net-_C102-Pad2_ .02uF
+R107 Net-_C101-Pad2_ Net-_C14-Pad1_ 100
+R103 GND Net-_C101-Pad1_ 100
+R104 GND Net-_C102-Pad1_ 100
+R102 GND Net-_C105-Pad1_ 100
+R106 GND Net-_C106-Pad1_ 100
+R112 Net-_C106-Pad2_ Net-_C7-Pad1_ 100
+V2 +2V5 GND dc 2.5
+V3 +5V GND dc 5
+C105 Net-_C105-Pad1_ Net-_C105-Pad2_ .02uF
+C106 Net-_C106-Pad1_ Net-_C106-Pad2_ .02uF
+.end
